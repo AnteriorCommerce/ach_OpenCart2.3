@@ -71,6 +71,16 @@ $data['entry_user'] = $this->language->get('entry_user');
 		} else {
 			$data['error_email'] = '';
 		}
+		if (isset($this->error['url'])) {
+			$data['error_url'] = $this->error['url'];
+		} else {
+			$data['error_url'] = '';
+		}
+		if (isset($this->error['user'])) {
+			$data['error_user'] = $this->error['user'];
+		} else {
+			$data['error_user'] = '';
+		}
 
 		$data['breadcrumbs'] = array();
 
@@ -239,6 +249,12 @@ if (isset($this->request->post['alphacommercehub_user'])) {
 
 		if (!$this->request->post['alphacommercehub_email']) {
 			$this->error['email'] = $this->language->get('error_email');
+		}
+		if (!$this->request->post['alphacommercehub_url']) {
+			$this->error['url'] = $this->language->get('error_url');
+		}
+		if (!$this->request->post['alphacommercehub_user']) {
+			$this->error['user'] = $this->language->get('error_user');
 		}
 
 		return !$this->error;
