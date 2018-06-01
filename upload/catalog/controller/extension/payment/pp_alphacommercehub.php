@@ -69,7 +69,7 @@ $data['merchant'] = $this->config->get('pp_alphacommercehub_merchant');
 
 			$total = $this->currency->format($order_info['total'] - $this->cart->getSubTotal(), $order_info['currency_code'], false, false);
 $amount = $order_info['total'] * 1000;
-$data['Amount'] = round($amount);
+$data['Amount'] = $amount;
 
 			if ($total > 0) {
 				$data['products'][] = array(
@@ -122,7 +122,7 @@ $data['merchanttxnid'] = $this->session->data['order_id'].'001';
 		$order_info = $this->model_checkout_order->getOrder($order_id);
 		if($order_info){
 		if($posteddata->MethodResult->Status == 0){
-$status='5';
+$status='1';
 }
 else{
 $status='7';
