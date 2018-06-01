@@ -131,7 +131,7 @@ $data['Amount'] = $amount;
 		$order_info = $this->model_checkout_order->getOrder($order_id);
 		if($order_info){
 		if($posteddata->MethodResult->Status == 0){
-$status='5';
+$status='1';
 }
 else{
 $status='7';
