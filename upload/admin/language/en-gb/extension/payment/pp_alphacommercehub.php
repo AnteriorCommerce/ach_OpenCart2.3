@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']					 = 'Alphacommercehub PayPal Payments Standard';
+$_['heading_title']					 = 'Alpha Commerce Hub Paypal';
 
 // Text
 $_['text_extension']				 = 'Extensions';
@@ -46,3 +46,6 @@ $_['help_total']					 = 'The checkout total the order must reach before this pay
 // Error
 $_['error_permission']				 = 'Warning: You do not have permission to modify payment PayPal!';
 $_['error_email']					 = 'E-Mail required!';
+$_['error_merchant']					 = 'Merchant-id required!';
+$_['error_url']					 = 'Hosted Payment Page URL required!';
+$_['error_user']					 = 'User ID required!';
